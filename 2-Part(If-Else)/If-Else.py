@@ -346,8 +346,57 @@
 # .................................................................................................................................................
 
 
-firstColor, secondColor = input(), input()
+# firstColor, secondColor = input(), input()
 
 
-if firstColor and secondColor:
-    print("1")
+# if firstColor not in ('красный', 'синий', 'желтый') or secondColor not in ('красный', 'синий', 'желтый'):
+#     print('ошибка цвета')
+# elif firstColor == 'красный' and secondColor == 'синий' or firstColor == 'синий' and secondColor == 'красный':
+#     print('фиолетовый')
+# elif firstColor == 'красный' and secondColor == 'желтый' or firstColor == 'желтый' and secondColor == 'красный':
+#     print('оранжевый')
+# elif firstColor == 'синий' and secondColor == 'желтый' or firstColor == 'желтый' and secondColor == 'синий':
+#     print('зеленый')
+# else:
+#     print(firstColor)
+
+
+
+# .................................................................................................................................................
+
+
+
+# a = int(input())
+
+# if not 0 <= a <= 36:
+#     print('ошибка ввода')
+# elif a == 0:
+#     print('зеленый')
+# elif 1 <= a <= 10:
+#     if a % 2 == 0:
+#         print('черный')
+#     else:
+#         print('красный')
+# elif 11 <= a <= 18:
+#     if a % 2 == 0:
+#         print('красный')
+#     else:
+#         print('черный')
+# elif 19 <= a <= 28:
+#     if a % 2 == 0:
+#         print('черный')
+#     else:
+#         print('красный')
+# elif 29 <= a <= 36:
+#     if a % 2 == 0:
+#         print('красный')
+#     else:
+#         print('черный')
+
+
+# .................................................................................................................................................
+
+
+
+a, b, c, d = int(input), int(input), int(input), int(input)
+
