@@ -102,3 +102,118 @@
 #     print('Число интересное')
 # else:
 #     print('Число неинтересное')
+
+
+# .................................................................................................................................................
+
+
+# a1 = abs(float(input()))
+# a2 = abs(float(input()))
+# a3 = abs(float(input()))
+# a4 = abs(float(input()))
+# a5 = abs(float(input()))
+
+
+# print(a1 + a2 + a3 + a4 + a5)
+
+
+# .................................................................................................................................................
+
+
+# a1 = int(input())
+# a2 = int(input())
+# b1 = int(input())
+# b2 = int(input())
+
+# formula = abs(a1 - b1) + abs(a2 - b2)
+
+
+# print(formula)
+
+
+# .................................................................................................................................................
+
+
+# a = '"Python is a great language!"'
+# a2 = ", said Fred. "
+# a3 = '"I '
+# a4 = "don't"
+# a5 = ' ever remember having this much fun before."'
+
+
+# print(a + a2 + a3 + a4 + a5)
+
+
+# .................................................................................................................................................
+
+
+# name = input()
+# suename = input()
+
+
+# print('Hello ' + name + ' ' + suename + '!' + ' You have just delved into Python')
+
+
+# .................................................................................................................................................
+
+
+# clubTag = input()
+# lenghtClub = str(len(clubTag))
+
+# print("Футбольная командa " + clubTag + " имеет длину " + lenghtClub + " символов")
+
+
+# .................................................................................................................................................\
+
+
+# city1 = input()
+# city2 = input()
+# city3 = input()
+
+# lenFirstCity = len(city1)
+# lenSecondCity = len(city2)
+# lenThirdCity = len(city3)
+
+# maxCity = max(lenFirstCity, lenSecondCity, lenThirdCity)
+# minCity = min(lenFirstCity, lenSecondCity, lenThirdCity)
+
+# if lenFirstCity == maxCity:
+#     maxCity = city1
+# elif lenSecondCity == maxCity:
+#     maxCity = city2
+# else:
+#     maxCity = city3
+
+
+# if lenFirstCity == minCity:
+#     minCity = city1
+# elif lenSecondCity == minCity:
+#     minCity = city2
+# else:
+#     minCity = city3
+
+
+# print(minCity)
+# print(maxCity)
+
+# .................................................................................................................................................
+
+
+x1 = input()
+x2 = input()
+x3 = input()
+
+lenghtX1 = len(x1)
+lenghtX2 = len(x2)
+lenghtX3 = len(x3)
+
+maxLen = max(lenghtX1, lenghtX2, lenghtX3)
+minLen = min(lenghtX1, lenghtX2, lenghtX3)
+averege = (lenghtX1 + lenghtX2 + lenghtX3) - (maxLen + minLen)
+stepD = minLen - averege
+
+if maxLen - averege == averege - minLen:
+    print('YES')
+else:
+    print('NO')
+
