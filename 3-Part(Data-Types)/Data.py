@@ -199,21 +199,153 @@
 # .................................................................................................................................................
 
 
-x1 = input()
-x2 = input()
-x3 = input()
+# x1 = input()
+# x2 = input()
+# x3 = input()
 
-lenghtX1 = len(x1)
-lenghtX2 = len(x2)
-lenghtX3 = len(x3)
+# lenghtX1 = len(x1)
+# lenghtX2 = len(x2)
+# lenghtX3 = len(x3)
 
-maxLen = max(lenghtX1, lenghtX2, lenghtX3)
-minLen = min(lenghtX1, lenghtX2, lenghtX3)
-averege = (lenghtX1 + lenghtX2 + lenghtX3) - (maxLen + minLen)
-stepD = minLen - averege
+# maxLen = max(lenghtX1, lenghtX2, lenghtX3)
+# minLen = min(lenghtX1, lenghtX2, lenghtX3)
+# averege = (lenghtX1 + lenghtX2 + lenghtX3) - (maxLen + minLen)
+# stepD = minLen - averege
 
-if maxLen - averege == averege - minLen:
-    print('YES')
-else:
-    print('NO')
+# if maxLen - averege == averege - minLen:
+#     print('YES')
+# else:
+#     print('NO')
+
+# .................................................................................................................................................
+
+
+# text = input()
+
+# if 'синий' in text:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+# .................................................................................................................................................
+
+
+# text = input()
+
+# if 'суббота' in text:
+#     print('YES')
+# elif 'воскресенье' in text:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+# .................................................................................................................................................
+
+
+# email = input()
+
+# if '.' in email and '@' in email:
+#     print('YES')
+# else:
+#     print('NO')
+
+# .................................................................................................................................................
+# from math import sqrt
+
+# a1 = float(input())
+# b1 = float(input())
+# a2 = float(input())
+# b2 = float(input())
+
+
+# formula = sqrt((pow(a1 - a2, 2) + pow(b1- b2, 2)))
+
+# print(formula)
+
+
+# .................................................................................................................................................
+
+# from math import *
+
+# radius = float(input())
+
+# S = pi * pow(radius, 2)
+# C = 2 * pi * radius
+
+# print(S)
+# print(C)
+
+# .................................................................................................................................................
+
+
+# from math import *
+
+# a = float(input())
+# b = float(input())
+
+# formula1 = (a + b) / 2
+# formula2 = sqrt(a * b)
+# formula3 = (2 * a * b) / (a + b)
+# formula4 = sqrt((pow(a, 2) + pow(b, 2)) / 2)
+
+# print(formula1, formula2, formula3, formula4, sep='\n')
+
+# .................................................................................................................................................
+
+# from math import *
+
+# a = float(input())
+# aRadians = radians(a)
+# print(sin(aRadians) + cos(aRadians) + pow(tan(aRadians), 2))
+
+# .................................................................................................................................................
+
+# from math import floor, ceil
+
+# a = float(input())
+
+# upA = ceil(a)
+# downA = floor(a)
+
+# print(upA + downA)
+
+
+# .................................................................................................................................................
+
+# from math import *
+
+# a = float(input())
+# b = float(input())
+# c = float(input())
+
+# D = pow(b, 2) - 4 * a * c
+
+# if D < 0:
+#     print("Нет корней")
+# elif D == 0:
+#     x = -b / (2 * a)
+#     print(x)
+# else:
+#     x1 = (-b - sqrt(D)) / (2 * a)
+#     x2 = (-b + sqrt(D)) / (2 * a)
+#     if x1 > x2:
+#         print(x2)
+#         print(x1)
+#     else:
+#         print(x1)
+#         print(x2)
+
+# .................................................................................................................................................
+
+# from math import *
+
+# n = int(input())
+# a = float(input())
+
+# S = (n * a**2) / (4 * tan(pi / n))
+# print(S)
+
+# .................................................................................................................................................
 
