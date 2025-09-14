@@ -377,12 +377,72 @@
 
 # .................................................................................................................................................
 
-n = int(input())
-listNumber = []
-while n > 0:
-    last = n % 10
-    listNumber.append(last)
-    n //= 10
+# n = int(input())
+# listNumber = []
+# while n > 0:
+#     last = n % 10
+#     listNumber.append(last)
+#     n //= 10
 
-print('Максимальная цифра равна', max(listNumber))
-print('Минимальная цифра равна', min(listNumber))
+# print('Максимальная цифра равна', max(listNumber))
+# print('Минимальная цифра равна', min(listNumber))
+
+
+# .................................................................................................................................................
+
+# num = int(input())
+# resNum = num
+# resNumCopy = num
+# sumNum = 0
+# countNum = 0
+# multpleNum = 1
+# firstDigit = 0
+
+# while num != 0:
+#     lastNum = num % 10
+#     sumNum += lastNum
+#     countNum += 1
+#     multpleNum *= lastNum
+#     avarage = sumNum / countNum
+#     num //= 10
+
+# while resNum != 0:
+#     lastDigit = resNum % 10
+#     lastDigitNum = lastDigit
+#     resNum = resNum // 10
+
+# print(sumNum)
+# print(countNum)
+# print(multpleNum)
+# print(avarage)
+# print(lastDigitNum)
+# print(lastDigitNum + (resNumCopy % 10))
+
+
+# num = int(input())
+# resNumCopy = num
+
+# sumNum = 0
+# countNum = 0
+# multNum = 1
+
+# while num != 0:
+#     lastNum = num % 10
+#     sumNum += lastNum
+#     countNum += 1
+#     multNum *= lastNum
+#     num //= 10
+
+# average = sumNum / countNum
+# lastDigit = resNumCopy % 10
+# firstDigit = int(str(resNumCopy)[0])  # можно было бы и циклом
+
+# print("Сумма цифр:", sumNum)
+# print("Количество цифр:", countNum)
+# print("Произведение цифр:", multNum)
+# print("Среднее арифметическое:", average)
+# print("Первая цифра:", firstDigit)
+# print("Сумма первой и последней цифры:", firstDigit + lastDigit)
+
+
+# .................................................................................................................................................
