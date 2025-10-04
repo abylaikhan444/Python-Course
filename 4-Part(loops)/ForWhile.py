@@ -1,4 +1,6 @@
 # .................................................................................................................................................
+# from itertools import count
+# from traceback import print_tb
 
 # for i in range(5):
 #     num = int(input())
@@ -590,13 +592,513 @@
 # .................................................................................................................................................
 
 
-n = int(input())
-product = 1
-while n != 0:
-    digit = n % 10
-    product = product * digit
-    n //= 10
-print(product)
+# n = int(input())
+# product = 1
+# while n != 0:
+#     digit = n % 10
+#     product = product * digit
+#     n //= 10
+# print(product)
 
 # .................................................................................................................................................
+
+# s = 0
+# for i in range(1, 7 + 1):
+#     n = int(input())
+#     if n % 2 == 0:
+#         s = s + n
+# print(s)
+
+
+# .................................................................................................................................................
+
+# mx = -1000001
+# s = 0
+# for i in range(11):
+#     x = int(input())
+#     if x < 0:
+#         s += x
+#     if x < 0 and x > mx:
+#         mx = x
+# if mx == -1000001: print("NO")
+# else: print(s); print(mx)
+
+# .................................................................................................................................................
+
+# Example of clock loop
+
+# for hours in range(24):
+#     for minutes in range(60):
+#         for seconds in range(60):
+#             print(hours, ':', minutes, ':', seconds)
+
+# .................................................................................................................................................
+
+
+# for i in range(8):
+#     for j in range(i + 1):
+#         print('*', end='')
+#     print()
+
+
+# .................................................................................................................................................
+
+# for i in range(1, 4):
+#     for j in range(3, 5):
+#         print(i, j, end='')
+
+
+# .................................................................................................................................................
+
+
+# a = int(input())
+#
+# for i in range(a):
+#     for j in range(3):
+#         print(a, end=' ')
+#     print()
+
+# .................................................................................................................................................
+
+
+# a = int(input())
+#
+# for i in range(1 , a + 1):
+#     for j in range(5):
+#         print(i, end=" ")
+#     print()
+
+
+# .................................................................................................................................................
+
+# a = int(input())
+#
+# for i in range(1, a // 2 + 2):
+#     print('*' * i)
+#
+# for j in range(a // 2, 0, -1):
+#     print('*' * j)
+
+
+# .................................................................................................................................................
+
+# a = int(input())
+#
+# for i in range(1, a + 1):
+#     for j in range(i):
+#         print(i, end='')
+#     print()
+
+
+# .................................................................................................................................................
+
+
+
+#
+# for x in range(1, 13):
+#     for y in range(1, 12):
+#         for z  in range(1, 11):
+#             if 28 * x + 30 * y + 31 * z == 365:
+#                 print(x, y, z)
+
+
+# .................................................................................................................................................
+
+# total = 0
+#
+# for i in range(11):          # максимум 10 быков (10*10=100)
+#     for j in range(21):      # максимум 20 коров (20*5=100)
+#         for k in range(201): # максимум 200 телят (200*0.5=100)
+#             if i + j + k == 100 and 10*i + 5*j + 0.5*k == 100:
+#                 total += 1
+#                 print("Быков:", i, "Коров:", j, "Телят:", k)
+# print("Всего решений:", total)
+
+# .................................................................................................................................................
+
+# a = int(input())
+# num = 1
+#
+# for i in range(1, a + 1):
+#     for j in range(i):
+#         print(num, end=" ")
+#         num += 1
+#     print()
+
+# .................................................................................................................................................
+
+# a = int(input("Enter a number: "))
+#
+# for i in range(1, a + 1):
+#     for j in range(i):
+#         print(j + 1, end="")
+#     for k in range(i - 1, 0, -1):
+#         print(k, end="")
+#     print()
+
+# .................................................................................................................................................
+
+
+# a = int(input())
+# count = 0
+#
+# for i in range(1, a + 1):
+#     count = 0
+#     for k in range(1, i + 1):
+#         if i % k == 0:
+#             count += 1
+#     print(i, '+' * count, sep='')
+
+
+# .................................................................................................................................................
+
+# a = int(input())
+# b = int(input())
+#
+# big_sum = 0
+# big_num = 0
+#
+# for num in range(a, b + 1):
+#     sum_count = 0
+#     for i in range(1, num + 1):
+#         if num % i == 0:
+#             sum_count += i
+#     if sum_count > big_sum or (sum_count == big_sum and num > big_num):
+#         big_sum = sum_count
+#         big_num = num
+#
+# print(big_num, big_sum)
+
+
+
+# .................................................................................................................................................
+
+
+# n = int(input())
+#
+# while n >= 10:
+#     total_n = 0
+#     while n > 0:
+#         total_n += n % 10
+#         n //= 10
+#     n = total_n
+#
+# print(n)
+
+# for i in range(n):
+#     last_digit = n % 10
+#     total_n += last_digit
+#     n //= 10
+# print('First Total Sum: ', total_n)
+#
+# total_n2 = total_n
+# for _ in range(total_n2):
+#     if total_n2 < 10:
+#         total_n2 = total_n
+#         break
+#     elif total_n > 10:
+#         last_digit2 = total_n % 10
+#         total_n2 += last_digit2
+#         n //= 10
+# print('Second Total Sum: ', total_n2)
+
+
+# .................................................................................................................................................
+
+
+# n = int(input())
+# total = 0
+#
+# for j in range(1, n + 1):
+#     fact = 1
+#     for i in range(1, n + 1):
+#         fact *= i
+#     total += fact
+#
+# print(total)
+
+
+# .................................................................................................................................................
+
+
+# a = int(input())
+# b = int(input())
+#
+# for i in range(a, b + 1):
+#     count = 0
+#     for j in range(1, i + 1):
+#         if i % j == 0:
+#             count += 1
+#     if count == 2:
+#         print(i)
+
+# .................................................................................................................................................
+
+
+# n = int(input())
+# res = 1
+# i = 2
+# while i <= n:
+#     res *= i
+#     i += 1
+# print(res)
+
+
+# .................................................................................................................................................
+
+
+# n = int(input())
+# last_digit = 0
+# all_numbers = 0
+# while n > 0:
+#     last_digit = n % 10
+#     if last_digit % 2 == 0:
+#             all_numbers += last_digit
+#     n = n // 10
+#
+# print(all_numbers)
+
+
+# .................................................................................................................................................
+
+# n = 7
+# count = 0
+# maximum = None
+# for i in range(n + 1):
+#     x = int(input())
+#     if x % 4 == 0:
+#         count += 1
+#         if maximum is None or x > maximum:
+#             maximum = x
+# if count > 0:
+#     print(count)
+#     print(maximum)
+# else:
+#     print('NO')
+
+
+# .................................................................................................................................................
+
+
+# n = 4
+# count = 0
+# maximum = 300
+# for i in range(n):
+#     x = int(input())
+#     if x % 2 != 0:
+#         count += 1
+#         if x > maximum:
+#             maximum = x
+# if count > 0:
+#     print(count)
+#     print(maximum)
+# else:
+#     print('NO')
+
+# .................................................................................................................................................
+
+
+# n = int(input())
+# print('*' * 19)
+#
+# for i in range(n - 2):
+#     print('*', ' ' * 15, '*')
+#
+# print('*' * 19)
+
+
+# .................................................................................................................................................
+
+
+# n = int(input())
+# last_digit = 0
+#
+# while n >= 100:
+#     last_digit = n % 10
+#     n = n // 10
+# print(last_digit)
+
+
+# .................................................................................................................................................
+
+# num = int(input("Enter a number: "))
+# num_copy_two = num
+# num_copy_three = num
+# num_copy_four = num
+# num_copy_five = num
+# num_copy_six = num
+# # количество цифр 3 в нем
+# last_digit = 0
+# last_digit_copy = num % 10
+# counter_of_three = 0
+# counter_of_last_digit = 0
+# counter_of_odd = 0
+#
+# for i in range(num):
+#     last_digit = num % 10
+#     if last_digit == 3:
+#         counter_of_three += 1
+#     num = num // 10
+# print('Количество цифр 3:', counter_of_three)
+#
+# # сколько раз в нём встречается последняя цифра
+# for i in range(num_copy_two):
+#     last_digit = num_copy_two % 10
+#     if last_digit == last_digit_copy:
+#         counter_of_last_digit += 1
+#     num_copy_two = num_copy_two // 10
+# print('сколько раз в нём встречается последняя цифра:',counter_of_last_digit)
+#
+# # количество чётных цифр
+#
+# while num_copy_three > 0:
+#     last_digit_odd = num_copy_three % 10
+#     if last_digit_odd % 2 == 0:
+#         counter_of_odd += 1
+#     num_copy_three = num_copy_three // 10
+# print('количество чётных цифр:', counter_of_odd)
+#
+#
+# # сумму его цифр, больших пяти
+# counter_of_more_five = 0
+#
+# while num_copy_four > 0:
+#     last_digit_more_five = num_copy_four % 10
+#     if last_digit_more_five > 5:
+#         counter_of_more_five = counter_of_more_five + last_digit_more_five
+#     num_copy_four = num_copy_four // 10
+# print('сумму его цифр, больших пяти', counter_of_more_five)
+#
+#
+# # произведение цифр, больших семи (если цифр больших семи нет, то вывести 1, если такая цифра одна, то вывести её)
+# counter_of_more_seven = 1
+# found = False
+#
+# while num_copy_five > 0:
+#     last_digit_more_seven = num_copy_five % 10
+#     if last_digit_more_seven > 7:
+#         counter_of_more_seven *= last_digit_more_seven
+#         found = True
+#     num_copy_five //= 10
+# print(counter_of_more_seven)
+#
+# if not found:
+#     print(1)
+#
+#
+# # сколько раз в нём встречаются цифры 0 и 5 (всего суммарно).
+#
+# counter_of_more_five_zero = 0
+#
+# while num_copy_six > 0:
+#     last_digit_more_five_zero = num_copy_six % 10
+#     if last_digit_more_five_zero == 0 or last_digit_more_five_zero == 5:
+#         counter_of_more_five_zero += 1
+#     num_copy_six = num_copy_six // 10
+# print(counter_of_more_five_zero)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# .................................................................................................................................................
+
+
+num = int(input())
+
+# копии числа
+num_copy_one = num
+num_copy_two = num
+num_copy_three = num
+num_copy_four = num
+num_copy_five = num
+num_copy_six = num
+
+# количество цифр 3 в нем
+counter_of_three = 0
+while num_copy_one > 0:
+    last_digit = num_copy_one % 10
+    if last_digit == 3:
+        counter_of_three += 1
+    num_copy_one //= 10
+print(counter_of_three)
+
+# сколько раз в нём встречается последняя цифра
+last_digit_copy = num % 10
+counter_of_last_digit = 0
+while num_copy_two > 0:
+    last_digit = num_copy_two % 10
+    if last_digit == last_digit_copy:
+        counter_of_last_digit += 1
+    num_copy_two //= 10
+print(counter_of_last_digit)
+
+# количество чётных цифр
+counter_of_odd = 0
+while num_copy_three > 0:
+    last_digit_odd = num_copy_three % 10
+    if last_digit_odd % 2 == 0:
+        counter_of_odd += 1
+    num_copy_three //= 10
+print(counter_of_odd)
+
+# сумма его цифр, больших пяти
+counter_of_more_five = 0
+while num_copy_four > 0:
+    last_digit_more_five = num_copy_four % 10
+    if last_digit_more_five > 5:
+        counter_of_more_five += last_digit_more_five
+    num_copy_four //= 10
+print(counter_of_more_five)
+
+# произведение цифр, больших семи
+counter_of_more_seven = 1
+found = False
+while num_copy_five > 0:
+    last_digit_more_seven = num_copy_five % 10
+    if last_digit_more_seven > 7:
+        counter_of_more_seven *= last_digit_more_seven
+        found = True
+    num_copy_five //= 10
+
+if not found:   # если нет цифр > 7
+    print(1)
+else:
+    print(counter_of_more_seven)
+
+# сколько раз в нём встречаются цифры 0 и 5 (суммарно)
+counter_of_more_five_zero = 0
+while num_copy_six > 0:
+    last_digit_more_five_zero = num_copy_six % 10
+    if last_digit_more_five_zero == 0 or last_digit_more_five_zero == 5:
+        counter_of_more_five_zero += 1
+    num_copy_six //= 10
+print(counter_of_more_five_zero)
+
+
+
+
+
+
+
+
+
 
