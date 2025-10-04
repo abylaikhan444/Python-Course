@@ -114,7 +114,7 @@ while num > 0:
     reversed_num1 = str(last) + reversed_num1
     num = num // 2
 print(reversed_num1)
-
+# last task
 
 
 
