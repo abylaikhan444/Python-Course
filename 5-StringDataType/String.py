@@ -107,13 +107,13 @@ from numbers import Number
 
 
 num = int(input())
-reversed_num = ''
+reversed_num1 = ''
 
 while num > 0:
     last = num % 2
-    reversed_num = str(last) + reversed_num
+    reversed_num1 = str(last) + reversed_num1
     num = num // 2
-print(reversed_num)
+print(reversed_num1)
 
 
 
