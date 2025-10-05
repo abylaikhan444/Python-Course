@@ -6,7 +6,7 @@
 # b = 'In 2010'
 #
 # print(len(b))
-from numbers import Number
+# from numbers import Number
 
 #
 # example_word = input('Enter a word: ')
@@ -106,16 +106,25 @@ from numbers import Number
 # .................................................................................................................................................
 
 
-num = int(input())
-reversed_num1 = ''
+# num = int(input())
+# reversed_num1 = ''
+#
+# while num > 0:
+#     last = num % 2
+#     reversed_num1 = str(last) + reversed_num1
+#     num = num // 2
+# print(reversed_num1)
+# # last task
 
-while num > 0:
-    last = num % 2
-    reversed_num1 = str(last) + reversed_num1
-    num = num // 2
-print(reversed_num1)
-# last task
+# .................................................................................................................................................
 
+
+word = input()
+
+if word[::] == word[::-1]:
+    print('YES')
+else:
+    print('NO')
 
 
 
