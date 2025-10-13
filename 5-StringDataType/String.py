@@ -365,11 +365,23 @@
 # .................................................................................................................................................
 
 
-def travel_distance(avg_speed = 600, travel_time = 60):
-    KM_PER_MILE = 1.609344
-    KNOTS = 1.852
-    travel_hours = travel_time * 60
-    travel_knots = (avg_speed / KNOTS) * travel_hours
-    travel_kms = travel_knots * KNOTS
-    return travel_kms
+# def travel_distance(avg_speed = 600, travel_time = 60):
+#     KM_PER_MILE = 1.609344
+#     KNOTS = 1.852
+#     travel_hours = travel_time * 60
+#     travel_knots = (avg_speed / KNOTS) * travel_hours
+#     travel_kms = travel_knots * KNOTS
+#     return travel_kms
 
+
+# .................................................................................................................................................
+
+
+amount = int(input())
+
+for i in  range(amount):
+    comment = input()
+    if comment.strip() == '':
+        print(f"{i + 1}: COMMENT SHOULD BE DELETED")
+    else:
+        print(f"{i + 1}: {comment}")
