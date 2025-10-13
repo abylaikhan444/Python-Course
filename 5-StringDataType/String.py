@@ -377,11 +377,17 @@
 # .................................................................................................................................................
 
 
-amount = int(input())
+# amount = int(input())
+#
+# for i in  range(amount):
+#     comment = input()
+#     if comment.strip() == '':
+#         print(f"{i + 1}: COMMENT SHOULD BE DELETED")
+#     else:
+#         print(f"{i + 1}: {comment}")
 
-for i in  range(amount):
-    comment = input()
-    if comment.strip() == '':
-        print(f"{i + 1}: COMMENT SHOULD BE DELETED")
-    else:
-        print(f"{i + 1}: {comment}")
+
+# ................................................................................................................................................
+
+
+
