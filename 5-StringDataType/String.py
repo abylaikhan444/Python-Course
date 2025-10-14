@@ -390,4 +390,31 @@
 # ................................................................................................................................................
 
 
+# user_name = input()
+#
+# if (user_name.startswith('@') and
+#     5 <= len(user_name) <= 15 and
+#     user_name[1:].isalnum() and
+#     (user_name[1:].islower() or user_name[1:].isdigit())):
+#     print('Correct')
+# else:
+#     print('Incorrect')
+
+# .................................................................................................................................................
+
+
+plate = input()
+
+letters = 'АВЕКМНОРСТУХ'
+
+if (len(plate) in (9, 10) and
+    plate[0] in letters and
+    plate[1:4].isdigit() and
+    plate[4] in letters and
+    plate[5] in letters and
+    plate[6] == '_' and
+    plate[7:].isdigit()):
+    print('YES')
+else:
+    print('NO')
 
