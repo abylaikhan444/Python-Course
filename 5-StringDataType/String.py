@@ -403,18 +403,38 @@
 # .................................................................................................................................................
 
 
-plate = input()
+# plate = input()
+#
+# letters = 'АВЕКМНОРСТУХ'
+#
+# if (len(plate) in (9, 10) and
+#     plate[0] in letters and
+#     plate[1:4].isdigit() and
+#     plate[4] in letters and
+#     plate[5] in letters and
+#     plate[6] == '_' and
+#     plate[7:].isdigit()):
+#     print('YES')
+# else:
+#     print('NO')
 
-letters = 'АВЕКМНОРСТУХ'
 
-if (len(plate) in (9, 10) and
-    plate[0] in letters and
-    plate[1:4].isdigit() and
-    plate[4] in letters and
-    plate[5] in letters and
-    plate[6] == '_' and
-    plate[7:].isdigit()):
-    print('YES')
-else:
-    print('NO')
+# .................................................................................................................................................
+
+
+# date_value = input()
+# currency_euro = input()
+# currency_china = input()
+#
+# print(f'На {date_value}: 1€ = {currency_euro}₽, 1¥ = {currency_china}₽')
+#
+#
+# # .................................................................................................................................................
+#
+# s = f'In {2010}, someone paid {10}K {"Bitcoin"} for two pizzas.'
+#
+# print(s)
+
+# .................................................................................................................................................
+
 
