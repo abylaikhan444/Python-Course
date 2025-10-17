@@ -403,18 +403,62 @@
 # .................................................................................................................................................
 
 
-plate = input()
+# plate = input()
+#
+# letters = 'АВЕКМНОРСТУХ'
+#
+# if (len(plate) in (9, 10) and
+#     plate[0] in letters and
+#     plate[1:4].isdigit() and
+#     plate[4] in letters and
+#     plate[5] in letters and
+#     plate[6] == '_' and
+#     plate[7:].isdigit()):
+#     print('YES')
+# else:
+#     print('NO')
 
-letters = 'АВЕКМНОРСТУХ'
+# .................................................................................................................................................
 
-if (len(plate) in (9, 10) and
-    plate[0] in letters and
-    plate[1:4].isdigit() and
-    plate[4] in letters and
-    plate[5] in letters and
-    plate[6] == '_' and
-    plate[7:].isdigit()):
-    print('YES')
-else:
-    print('NO')
+# a, b = int(input()), int(input())
+#
+# print(f'Для чисел {a} и {b}:')
+# print(f'  Сумма кубов: {a}**3 + {b}**3 = {a**3 + b**3}')
+# print(f'  Куб суммы: ({a} + {b})**3 = {(a + b)**3}')
 
+
+# .................................................................................................................................................
+
+
+# import numpy as np
+#
+# number_date = int(input())
+# weight_person = int(input())
+#
+# for i in np.arange(100, 87, -0.2):
+#     print(round(i))
+
+#
+# number_date = int(input())
+# input_weight_person = float(input())
+#
+#
+# right_weight = 100 - 0.2 * number_date
+#
+# if  input_weight_person > right_weight:
+#     print(f'Что-то пошло не так')
+#     print(f'#{number_date} ДЕНЬ: ТЕКУЩИЙ ВЕС = {input_weight_person} кг, ЦЕЛЬ по ВЕСУ = {right_weight} кг')
+# else:
+#     print('Все идет по плану')
+#     print(f'#{number_date} ДЕНЬ: ТЕКУЩИЙ ВЕС = {input_weight_person} кг, ЦЕЛЬ по ВЕСУ = {right_weight} кг')
+
+
+
+# .................................................................................................................................................
+
+
+
+letter = input()
+letter_code = ord(letter)
+
+print(letter_code)
