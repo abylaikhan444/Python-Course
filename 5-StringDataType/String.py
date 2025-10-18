@@ -449,7 +449,48 @@
 
 # .................................................................................................................................................
 
-sentences = input()
+# sentences = input()
+#
+# for i in range(0, len(sentences)):
+#     print(ord(sentences[i]), end=' ')
 
-for i in range(0, len(sentences)):
-    print(ord(sentences[i]), end=' ')
+
+# .................................................................................................................................................
+
+
+user_first_word = input()
+user_second_word = input()
+user_third_word = input()
+user_fourth_word = input()
+
+count_first_word = 0
+count_second_word = 0
+count_third_word = 0
+count_fourth_word = 0
+
+for i in range(len(user_first_word)):
+    count_first_word += ord(user_first_word[i])
+
+for i in range(len(user_second_word)):
+    count_second_word += ord(user_second_word[i])
+
+for i in range(len(user_third_word)):
+    count_third_word += ord(user_third_word[i])
+
+for i in range(len(user_fourth_word)):
+    count_fourth_word += ord(user_fourth_word[i])
+
+max_value = max(count_first_word, count_second_word, count_third_word, count_fourth_word)
+
+if max_value == count_first_word:
+    print(user_first_word)
+elif max_value == count_second_word:
+    print(user_second_word)
+elif max_value == count_third_word:
+    print(user_third_word)
+else:
+    print(user_fourth_word)
+
+
+
+
