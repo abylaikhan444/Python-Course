@@ -403,18 +403,54 @@
 # .................................................................................................................................................
 
 
-plate = input()
+# plate = input()
+#
+# letters = 'АВЕКМНОРСТУХ'
+#
+# if (len(plate) in (9, 10) and
+#     plate[0] in letters and
+#     plate[1:4].isdigit() and
+#     plate[4] in letters and
+#     plate[5] in letters and
+#     plate[6] == '_' and
+#     plate[7:].isdigit()):
+#     print('YES')
+# else:
+#     print('NO')
 
-letters = 'АВЕКМНОРСТУХ'
+# print(ord(chr(65)))
 
-if (len(plate) in (9, 10) and
-    plate[0] in letters and
-    plate[1:4].isdigit() and
-    plate[4] in letters and
-    plate[5] in letters and
-    plate[6] == '_' and
-    plate[7:].isdigit()):
-    print('YES')
-else:
-    print('NO')
+
+# .................................................................................................................................................
+
+
+# letter = input()
+# next_letter = ord(letter) + 1
+#
+# if next_letter > 1071:
+#     print('Дальше букв нет')
+# elif next_letter <= 1071:
+#     print(chr(next_letter))
+
+
+# .................................................................................................................................................
+
+
+# a, b = int(input()), int(input())
+#
+# for i in range(a, b + 1):
+#     letter_code = chr(i)
+#     print(letter_code, end=' ')
+
+
+# .................................................................................................................................................
+
+# sentences = input()
+#
+# for i in range(0, len(sentences)):
+#     print(ord(sentences[i]), end=' ')
+
+
+# .................................................................................................................................................
+
 
