@@ -7,6 +7,7 @@
 #
 # print(len(b))
 # from numbers import Number
+from dataclasses import replace
 
 #
 # example_word = input('Enter a word: ')
@@ -495,7 +496,78 @@
 
 # .................................................................................................................................................
 
-print(ord('@'))
+# print(ord('🐝'))
+
+# user_comment = input()
+# coin_count = 0
+#
+# for i in range(len(user_comment)):
+#     coin_count += ord(user_comment[i])
+#
+# print(f"Текст сообщения: '{user_comment}'")
+# print(f"Стоимость сообщения: {coin_count * 3}🐝")
+
+
+
+# .................................................................................................................................................
+
+
+# # print(ord('🐝'))
+#
+# user_comment_rus = input()
+# coin_count = 0
+# coin_count_new = 0
+# rus = 'еуорахсЕТОРАНХСВМ'
+# eng = 'eyopaxcETOPAHXCBM'
+#
+# for i in range(len(user_comment_rus)):
+#     coin_count += ord(user_comment_rus[i])
+#
+# for i in range(len(eng)):
+#     user_comment_eng = user_comment_rus.replace(user_comment_rus[i], rus[i])
+#
+# for i in range(len(user_comment_eng)):
+#     coin_count_new += ord(user_comment_eng[i])
+#
+#
+# print(coin_count_new)
+# print(coin_count)
+#
+#
+# # print(f"Текст сообщения: '{user_comment_rus}'")
+# # print(f"Стоимость сообщения: {coin_count * 3}🐝")
+
+
+# .................................................................................................................................................
+
+#
+# number_position = int(input())
+# word = input()
+# word_new = ''
+#
+# for i in word:
+#     new_char = chr((ord(i) - ord('a') - number_position) % 26 + ord('a'))
+#     word_new += new_char
+#
+# print(word_new)
+
+
+# .................................................................................................................................................
+
+# s = input()
+# for i in range(1040, 1105):
+#     if str(i) in s:
+#         s = s.replace(f'[u-{i}]', chr(i))
+# print(s)
+
+
+# .................................................................................................................................................
+
+
+
+
+
+
 
 
 
