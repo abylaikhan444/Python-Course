@@ -564,10 +564,88 @@ from dataclasses import replace
 # .................................................................................................................................................
 
 
+# first_word = input()
+# second_word = input()
+# third_word = input()
+# fourth_word = input()
+#
+# min_word_length = min(first_word, second_word, third_word, fourth_word)
+# max_word_length = max(first_word, second_word, third_word, fourth_word)
+#
+# last_letter1 = min_word_length[len(min_word_length) - 1]
+# last_letter2 = max_word_length[len(max_word_length) - 1]
+#
+# unicode_letter1 = int(ord(last_letter1))
+# unicode_letter2 = int(ord(last_letter2))
+#
+# multiple_two_letters = unicode_letter1 * unicode_letter2
+#
+# print(pow(multiple_two_letters, 2))
 
 
 
+# .................................................................................................................................................
 
 
+# word = input()
+# min_word = word
+# max_word = ''
+#
+# while word != 'КОНЕЦ':
+#     word = input()
+#     if word == 'КОНЕЦ':
+#         break
+#     if word > max_word:
+#         max_word = word
+#     if word < min_word:
+#         min_word = word
+#
+# print(f'Минимальная строка ⬇️: {min_word}')
+# print(f'Максимальная строка ⬆️: {max_word}')
+
+
+# .................................................................................................................................................
+
+
+# user_first_word = input()
+# user_second_word = input()
+#
+# new_first = ''
+# new_second = ''
+#
+# for i in range(len(user_first_word)):
+#     if user_first_word[i].isalpha():
+#         new_first += user_first_word[i]
+#
+# for j in range(len(user_second_word)):
+#     if user_second_word[j].isalpha():
+#         new_second += user_second_word[j]
+#
+# if new_first.lower() == new_second.lower():
+#     print('YES')
+# else:
+#     print('NO')
+
+
+
+# .................................................................................................................................................
+
+
+# word1, word2, word3 = input(), input(), input()
+#
+# max_word = max(word1, word2, word3)
+# min_word = min(word1, word2, word3)
+#
+# if word1 != max_word and word1 != min_word:
+#     avg_word = word1
+# elif word2 != max_word and word2 != min_word:
+#     avg_word = word2
+# else:
+#     avg_word = word3
+#
+# print(min_word, avg_word, max_word)
+
+
+# .................................................................................................................................................
 
 
