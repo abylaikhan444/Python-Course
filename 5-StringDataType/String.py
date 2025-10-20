@@ -8,7 +8,6 @@
 # print(len(b))
 # from numbers import Number
 from dataclasses import replace
-from operator import index
 
 #
 # example_word = input('Enter a word: ')
@@ -648,6 +647,156 @@ from operator import index
 
 
 # .................................................................................................................................................
+
+
+# nums = '1234567890'
+# chars = 'АБВГДЕЖЗИЙКЛМНОП'
+#
+# for i in range(int(input())):
+#     word = input()
+#     if len(word) == 2 and word[0] in nums and word[1] in chars:
+#         print('YES')
+#     else:
+#         print('NO')
+
+
+# .................................................................................................................................................
+
+# # print(ord('🐝'))
+#
+# user_comment_rus = input()
+# coin_count = 0
+# coin_count_new = 0
+# rus = 'еуорахсЕТОРАНХСВМ'
+# eng = 'eyopaxcETOPAHXCBM'
+#
+# for i in range(len(user_comment_rus)):
+#     coin_count += ord(user_comment_rus[i])
+#
+# for i in range(len(eng)):
+#     user_comment_eng = user_comment_rus.replace(user_comment_rus[i], rus[i])
+#
+# for i in range(len(user_comment_eng)):
+#     coin_count_new += ord(user_comment_eng[i])
+#
+#
+# print(coin_count_new)
+# print(coin_count)
+#
+#
+# # print(f"Текст сообщения: '{user_comment_rus}'")
+# # print(f"Стоимость сообщения: {coin_count * 3}🐝")
+
+
+# .................................................................................................................................................
+
+#
+# number_position = int(input())
+# word = input()
+# word_new = ''
+#
+# for i in word:
+#     new_char = chr((ord(i) - ord('a') - number_position) % 26 + ord('a'))
+#     word_new += new_char
+#
+# print(word_new)
+
+
+# .................................................................................................................................................
+
+# s = input()
+# for i in range(1040, 1105):
+#     if str(i) in s:
+#         s = s.replace(f'[u-{i}]', chr(i))
+# print(s)
+
+
+# .................................................................................................................................................
+
+
+# first_word = input()
+# second_word = input()
+# third_word = input()
+# fourth_word = input()
+#
+# min_word_length = min(first_word, second_word, third_word, fourth_word)
+# max_word_length = max(first_word, second_word, third_word, fourth_word)
+#
+# last_letter1 = min_word_length[len(min_word_length) - 1]
+# last_letter2 = max_word_length[len(max_word_length) - 1]
+#
+# unicode_letter1 = int(ord(last_letter1))
+# unicode_letter2 = int(ord(last_letter2))
+#
+# multiple_two_letters = unicode_letter1 * unicode_letter2
+#
+# print(pow(multiple_two_letters, 2))
+
+
+
+# .................................................................................................................................................
+
+
+# word = input()
+# min_word = word
+# max_word = ''
+#
+# while word != 'КОНЕЦ':
+#     word = input()
+#     if word == 'КОНЕЦ':
+#         break
+#     if word > max_word:
+#         max_word = word
+#     if word < min_word:
+#         min_word = word
+#
+# print(f'Минимальная строка ⬇️: {min_word}')
+# print(f'Максимальная строка ⬆️: {max_word}')
+
+
+# .................................................................................................................................................
+
+
+# user_first_word = input()
+# user_second_word = input()
+#
+# new_first = ''
+# new_second = ''
+#
+# for i in range(len(user_first_word)):
+#     if user_first_word[i].isalpha():
+#         new_first += user_first_word[i]
+#
+# for j in range(len(user_second_word)):
+#     if user_second_word[j].isalpha():
+#         new_second += user_second_word[j]
+#
+# if new_first.lower() == new_second.lower():
+#     print('YES')
+# else:
+#     print('NO')
+
+
+
+# .................................................................................................................................................
+
+
+# word1, word2, word3 = input(), input(), input()
+#
+# max_word = max(word1, word2, word3)
+# min_word = min(word1, word2, word3)
+#
+# if word1 != max_word and word1 != min_word:
+#     avg_word = word1
+# elif word2 != max_word and word2 != min_word:
+#     avg_word = word2
+# else:
+#     avg_word = word3
+#
+# print(min_word, avg_word, max_word)
+
+
+# .................................................................................................................................................
 #
 # n = int(input())
 # flag = True
@@ -724,7 +873,4 @@ s = input()
 s1 = s[: s.find('h')] + s[s.rfind('h'): s.find('h'): -1] + s[s.rfind('h'):]
 
 print(s1)
-
-
-
 
