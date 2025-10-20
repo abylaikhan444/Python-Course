@@ -8,6 +8,7 @@
 # print(len(b))
 # from numbers import Number
 from dataclasses import replace
+from operator import index
 
 #
 # example_word = input('Enter a word: ')
@@ -647,5 +648,83 @@ from dataclasses import replace
 
 
 # .................................................................................................................................................
+#
+# n = int(input())
+# flag = True
+# prev = input()
+# prev_name = prev.split()[0]
+# start = prev.find('«') + 1
+# end = prev.find('»')
+# prev_book = prev[start:end]
+# # print(f"{prev_name} -> {prev_book}")
+#
+# for i in range(n - 1):
+#     current = input()
+#     current_name = current.split()[0]
+#     start = current.find('«') + 1
+#     end = current.find('»')
+#     current_book = current[start:end]
+#     if current_name < prev_name:
+#         flag = False
+#         break
+#     if current_name == prev_name:
+#         if current_book < prev_book:
+#             flag = False
+#             break
+#     prev_name = current_name
+#     prev_book = current_book
+#
+# if flag:
+#     print('YES')
+# else:
+#     print('NO')
 
-~
+# .................................................................................................................................................
+
+# s = input()
+# result = ''
+# for i in range(len(s)):
+#     if i not in (0, 3, 6, 9, 12, 15):
+#         result += s[i]
+# print(result)
+
+# .................................................................................................................................................
+
+
+# s = str(input())
+#
+# result = s.replace('1', 'one')
+#
+# print(result)
+
+
+# .................................................................................................................................................
+#
+# s = input()
+# count = 0
+#
+# for i in range(len(s)):
+#     if s[i] == 'f':
+#         count += 1
+#         if count == 2:
+#             second_index = i
+#             break
+#
+# if count == 0:
+#     print(-2)
+# elif count == 1:
+#     print(-1)
+# else:
+#     print(second_index)
+
+
+# .................................................................................................................................................
+# abch12345h
+s = input()
+s1 = s[: s.find('h')] + s[s.rfind('h'): s.find('h'): -1] + s[s.rfind('h'):]
+
+print(s1)
+
+
+
+
