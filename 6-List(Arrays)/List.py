@@ -112,11 +112,37 @@
 # .................................................................................................................................................
 
 
+# n = int(input())
+# words = []
+#
+# for i in range(n):
+#     word = input()
+#     words.append(word)
+#
+# print(words)
+
+
+# .................................................................................................................................................
+
+# word = list()
+# abc = 'abcdefghijklmnopqrstuvwxyz'
+#
+# for i in range(26):
+#     char = chr(ord('a') + i) * (i + 1)
+#     word.append(char)
+#
+# print(word)
+
+
+# .................................................................................................................................................
+
+
 n = int(input())
-words = []
+result = []
 
 for i in range(n):
-    word = input()
-    words.append(word)
+    number = int(input())
+    cube = pow(number, 3)
+    result.append(cube)
 
-print(words)
+print(result)
