@@ -183,3 +183,60 @@
 
 # .................................................................................................................................................
 
+# n = int(input())
+# numbers = []
+#
+# for _ in range(n):
+#     numbers.append(int(input()))
+#
+# result_even_index = []
+#
+# for i in range(len(numbers)):
+#     if i % 2 == 0:
+#         result_even_index.append(numbers[i])
+#
+# print(result_even_index)
+
+# .................................................................................................................................................
+
+# n = int(input())
+# words = []
+# sum_words = ''
+# for _ in range(n):
+#     word = input()
+#     words.append(word)
+#
+# k = int(input())
+#
+# for i in range(len(words)):
+#     if len(words[i]) >= k:
+#         sum_words += words[i][k - 1]
+#     elif len(words[i]) < k:
+#         continue
+#
+# print(sum_words)
+
+
+# .................................................................................................................................................
+
+
+# n = int(input())
+# words = []
+# redacted_words = []
+# for _ in range(n):
+#     word = input()
+#     words.append(word)
+#
+# for i in range(len(words)):
+#     redacted_words.extend(words[i])
+#
+# print(redacted_words)
+
+
+# .................................................................................................................................................
+
+
+
+
+
+
