@@ -236,7 +236,174 @@
 # .................................................................................................................................................
 
 
+# numbers = [2, 1, 1, 3, 4]
+#
+# total = 0
+# for num in numbers:
+#     if num % 2 == 1:
+#         total = total + num
+#
+# print(total)
+
+
+# .................................................................................................................................................
+
+
+# numbers = [1, 78, 23, -65, 99, 9089, 34, -32, 0, -67, 1, 11, 111]
+# numbers_squared = []
+#
+# for i in numbers:
+#     numbers_squared.append(i ** 2)
+#
+# print(sum(numbers_squared))
+
+
+# .................................................................................................................................................
+
+# # f(x) = x**2 + 2x + 1
+#
+# n = int(input())
+# numbers = []
+#
+# for _ in range(n):
+#     a = int(input())
+#     numbers.append(a)
+# print(*numbers, sep='\n')
+#
+#
+# print(sep="\n")
+#
+# for i in numbers:
+#     result = i**2 + 2 * i + 1
+#     print(result)
+# print()
+
+
+# .................................................................................................................................................
+
+
+# n = int(input())
+# numbers = []
+#
+# for i in range(n):
+#     num = int(input())
+#     numbers.append(num)
+#
+# minimum = min(numbers)
+# maximum = max(numbers)
+#
+# del numbers[numbers.index(minimum)]
+# del numbers[numbers.index(maximum)]
+#
+# print(*numbers, sep='\n')
+
+
+# .................................................................................................................................................
 
 
 
+# n = int(input())
+# words = []
+# result = []
+#
+# for _ in range(n):
+#     word = input()
+#     words.append(word)
+#
+# for i in words:
+#     if i not in result:
+#         result.append(i)
+#
+# print(*result, sep='\n')
 
+
+# .................................................................................................................................................
+
+# n = int(input())
+# words = []
+# result_sent = []
+#
+# for _ in range(n):
+#     sentence = input()
+#     words.append(sentence)
+#
+# word_find = input()
+#
+# for i in words:
+#     if word_find.lower() in i.lower():
+#         result_sent.append(i)
+#
+# print(*result_sent, sep='\n')
+
+
+
+# .................................................................................................................................................
+
+
+
+# n = int(input())
+# words = []
+# result_sent = []
+#
+# for _ in range(n):
+#     sentence = input()
+#     words.append(sentence)
+#
+# k = int(input())
+# word_find_lst = []
+#
+# for _ in range(k):
+#     word_find = input().lower()
+#     word_find_lst.append(word_find)
+#
+# for i in range(len(words)):
+#     lower_sentence = words[i].lower()
+#     found_all = True
+#
+#     for j in range(len(word_find_lst)):
+#         if word_find_lst[j] not in lower_sentence:
+#             found_all = False
+#             break
+#
+#     if found_all:
+#         result_sent.append(words[i])
+#
+# print(*result_sent, sep='\n')
+
+
+
+# .................................................................................................................................................
+
+
+# n = int(input())
+# numbers = []
+# neg_numbers = []
+# zero_numbers = []
+# pos_numbers = []
+#
+# for _ in range(n):
+#     numbers.append(int(input()))
+#
+# for i in range(len(numbers)):
+#     if numbers[i] < 0:
+#         neg_numbers.append(numbers[i])
+#     elif numbers[i] == 0:
+#         zero_numbers.append(numbers[i])
+#     else:
+#         pos_numbers.append(numbers[i])
+#
+# print(*neg_numbers, sep='\n')
+# print(*zero_numbers, sep='\n')
+# print(*pos_numbers, sep='\n')
+
+
+# .................................................................................................................................................
+
+
+# print([1, 2].join())
+
+lst = ['Мы', 'учим', 'язык', 'Python']
+lst2 = 'Мы, учим, язык, Python'
+test = lst2.split(' # ')
+
+print(test)
