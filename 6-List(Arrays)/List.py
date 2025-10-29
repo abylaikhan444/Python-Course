@@ -3,8 +3,9 @@
 #
 # print(result)
 from numbers import Number
+from os.path import split
 
-from numpy.ma.core import min_val
+from numpy.ma.core import min_val, sort, append
 
 # .................................................................................................................................................
 
@@ -546,15 +547,64 @@ from numpy.ma.core import min_val
 #         print(s)
 
 
-number_of_row = input()
-n = int(number_of_row[1:])
+# number_of_row = input()
+# n = int(number_of_row[1:])
+#
+# for _ in range(n):
+#     s = input()
+#     # Разделяем строку по первому # (если он есть)
+#     s = s.split('#')[0]
+#     # Убираем пробелы в конце строки
+#     s = s.rstrip()
+#     print(s)
 
-for _ in range(n):
-    s = input()
-    # Разделяем строку по первому # (если он есть)
-    s = s.split('#')[0]
-    # Убираем пробелы в конце строки
-    s = s.rstrip()
-    print(s)
+
+
+# .................................................................................................................................................
+
+# numbers = [5, 1, 2, 3]
+#
+# s = sorted(numbers)
+#
+# print(numbers)
+# print(s)
+
+
+# numbers = ['1', '2', '3', '10', '12', '55']
+# unicode_numbers_list = []
+# for i in range(len(numbers)):
+#     unicode_num = ord(numbers[i][0])
+#     unicode_numbers_list.append(unicode_num)
+#     unicode_numbers_list.append(unicode_num)
+#
+# print(unicode_numbers_list)
+
+
+# .................................................................................................................................................
+
+# numbers = [int(num) for num in input().split()]
+#
+# # Сортируем по возрастанию
+# ascending = sorted(numbers)
+# print(*ascending)
+#
+# # Сортируем по убыванию
+# descending = sorted(numbers, reverse=True)
+# print(*descending)
+
+
+# .................................................................................................................................................
+
+#
+# n = int(input())
+# music_name = []
+#
+# for _ in range(n):
+#     s = input()
+#     music_name.append(s)
+#
+# a = sorted(music_name)
+#
+# print(*a, sep='\n')
 
 
