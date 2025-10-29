@@ -534,9 +534,27 @@ from numpy.ma.core import min_val
 
 # .................................................................................................................................................
 
-number_of_row = input()
-n = int(number_of_row[1::])
+# number_of_row = input()
+# n = int(number_of_row[1::])
+#
+# for i in range(n):
+#     s = input()
+#     if '#' in s:
+#         a = s.index('#')
+#         print(s[0:a])
+#     elif '#' not in s:
+#         print(s)
 
-for i in range(n):
+
+number_of_row = input()
+n = int(number_of_row[1:])
+
+for _ in range(n):
+    s = input()
+    # Разделяем строку по первому # (если он есть)
+    s = s.split('#')[0]
+    # Убираем пробелы в конце строки
+    s = s.rstrip()
+    print(s)
 
 
