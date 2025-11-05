@@ -22,4 +22,16 @@ def draw_triangle():
 
 
 # TASK 3
+name = input()
+surname = input()
+patronymic = input()
+
+def print_fio(name, surname, patronymic):
+    sum_str = surname[0] + name[0] + patronymic[0]
+    print(sum_str.upper())
+
+print_fio(name, surname, patronymic)
+
+
+# TASK 4
 
