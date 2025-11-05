@@ -21,6 +21,5 @@ def draw_triangle():
         print('*' * i)
 
 
+# TASK 3
 
-draw_box()
-draw_triangle()
