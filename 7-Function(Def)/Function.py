@@ -87,14 +87,37 @@ from numpy.ma.core import count
 
 # TASK 7
 
+# считываем данные
+# fill = input()
+# base = int(input())
+#
+# # объявление функции
+# def draw_triangle(fill, base):
+#     for i in range(1, base // 2 + 2):
+#         print(fill * i)
+#
+#     for j in range(base // 2, 0, -1):
+#         print(fill * j)
+#
+#
+# # вызываем функцию
+# draw_triangle(fill, base)
 
-# объявление функции
-def draw_triangle(fill, base):
 
+# TASK 8
 
 # считываем данные
-fill = input()
-base = int(input())
+msc_time = input().split(':')
+
+# объявление функции
+def print_perm_time_call(msc_time):
+    msk_hours = int(msc_time[0].replace('0', ''))
+    perm_hours = str(msk_hours + 2)
+
+    result = f'Созвон будет в {perm_hours.zfill('0')}'
+
+    print(result)
+
 
 # вызываем функцию
-draw_triangle(fill, base)
+print_perm_time_call(msc_time)
