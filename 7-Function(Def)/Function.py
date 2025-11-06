@@ -106,18 +106,27 @@ from numpy.ma.core import count
 
 # TASK 8
 
-# считываем данные
-msc_time = input().split(':')
+# # считываем данные
+# msc_time = input().split(':')
+#
+# # объявление функции
+# def print_perm_time_call(msc_time):
+#     msk_hours = int(msc_time[0].replace('0', ''))
+#     perm_hours = str(msk_hours + 2)
+#
+#     result = f'Созвон будет в {perm_hours.zfill(0)}:{msc_time[1]}.'
+#
+#     print(result)
+#
+#
+# # вызываем функцию
+# print_perm_time_call(msc_time)
 
-# объявление функции
-def print_perm_time_call(msc_time):
-    msk_hours = int(msc_time[0].replace('0', ''))
-    perm_hours = str(msk_hours + 2)
 
-    result = f'Созвон будет в {perm_hours.zfill('0')}'
+# TASK 9
 
-    print(result)
+s = input()
 
 
-# вызываем функцию
-print_perm_time_call(msc_time)
+def print_symbol_counts(s):
+    pass
