@@ -125,8 +125,24 @@ from numpy.ma.core import count
 
 # TASK 9
 
-s = input()
+# word = input().lower()
+# #
+# #
+# # def print_symbol_counts(s):
+# #     # Сортируем уникальные буквы в лексикографическом порядке
+# #     unique_chars = sorted(set(s))
+# #
+# #     for char in unique_chars:
+# #         count = s.count(char)  # считаем в ИСХОДНОЙ строке
+# #         print(f"{char}: {count}")
+# #
+# #
+# # print_symbol_counts(word)
 
 
-def print_symbol_counts(s):
-    pass
+# TASK 10
+
+
+
+
+
