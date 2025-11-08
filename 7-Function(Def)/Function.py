@@ -13,6 +13,8 @@
 #                 else:
 #                     print(' ', end='')
 #         print()
+import math
+
 from numpy.ma.core import count
 
 # TASK 2
@@ -142,7 +144,54 @@ from numpy.ma.core import count
 
 # TASK 10
 
+# def convert_to_miles(km):
+#     return km * 0.6214
+#
+# km = int(input())
+# print(convert_to_miles(km))
 
 
+# TASK 11
+
+
+# def code_format(text):
+#     return f'<code>{text}</code>'
+#
+# text = input()
+# print(code_format(text))
+
+
+# TASK 12
+
+# def get_days(number_month):
+#     return all_days[number_month - 1]
+#
+# all_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+# number_month = int(input())
+# print(get_days(number_month))
+
+
+# TASK 13
+
+# def get_factors(n):
+#     factors = []
+#     for i in range(1, n + 1):
+#         if n % i == 0:
+#             factors.append(i)
+#     return factors
+# n = int(input())
+# print(get_factors(n))
+
+
+# TASK 14
+
+# def math_round_to_int(num):
+#     return math.floor(num + 0.5)
+#
+# num = float(input())
+# print(math_round_to_int(num))
+
+
+# TASK 15
 
 
