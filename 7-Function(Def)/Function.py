@@ -210,13 +210,41 @@ from numpy.ma.core import count
 # TASK 16
 
 
-# объявление функции
-def merge(list1, list2):
-    pass
+# # объявление функции
+# def merge(list1, list2):
+#     result_lst = []
+#     for i in range(len(list1)):
+#         result_lst.append(list1[i])
+#     for j in range(len(list2)):
+#         result_lst.append(list2[j])
+#     result_lst.sort()
+#     return result_lst
+#
+# # считываем данные
+# numbers1 = [int(c) for c in input().split()]
+# numbers2 = [int(c) for c in input().split()]
+#
+# # вызываем функцию
+# print(merge(numbers1, numbers2))
 
-# считываем данные
-numbers1 = [int(c) for c in input().split()]
-numbers2 = [int(c) for c in input().split()]
 
-# вызываем функцию
-print(merge(numbers1, numbers2))
+# TASK 17
+
+# def merge(numbers_lists):
+#     result_lst = []
+#     # Собираем все числа из всех списков
+#     for lst in numbers_lists:
+#         for num_str in lst:
+#             result_lst.append(int(num_str))
+#     result_lst.sort()  # Сортируем
+#     print(*result_lst)
+#
+# # считываем данные
+# n = int(input())
+# numbers_str = []
+# for i in range(n):
+#     string_lst_num = input().split()
+#     numbers_str.append(string_lst_num)
+#
+# # вызываем функцию
+# merge(numbers_str)
