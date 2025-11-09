@@ -195,3 +195,28 @@ from numpy.ma.core import count
 # TASK 15
 
 
+# def find_all(target, symbol):
+#     index_lst = []
+#     for i in range(len(target)):
+#         if target[i] == symbol:
+#             index_lst.append(i)
+#     return index_lst
+#
+# target = input()
+# symbol = input()
+# print(find_all(target, symbol))
+
+
+# TASK 16
+
+
+# объявление функции
+def merge(list1, list2):
+
+
+# считываем данные
+numbers1 = [int(c) for c in input().split()]
+numbers2 = [int(c) for c in input().split()]
+
+# вызываем функцию
+print(merge(numbers1, numbers2))
