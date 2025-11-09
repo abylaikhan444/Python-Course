@@ -194,4 +194,44 @@ from numpy.ma.core import count
 
 # TASK 15
 
+# def number_of_factors(num):
+#     count = 0
+#     for i in range(1, num + 1):
+#         if num % i == 0:
+#             count += 1
+#     return count
+#
+# num = int(input())
+# print(number_of_factors(num))
 
+
+# TASK 16
+
+# def get_unique(numbers):
+#     new_lst = []
+#     for i in numbers:
+#         if i not in new_lst:
+#             new_lst.append(i)
+#     return new_lst
+#
+# numbers = eval(input())
+# print(get_unique(numbers))
+
+
+# TASK 17
+
+# объявление функции
+# def get_last_index(data, value):
+#     if value in data:
+#         # Ищем с конца списка
+#         for i in range(len(data) - 1, -1, -1):
+#             if data[i] == value:
+#                 return i
+#     return 'ERROR!'
+#
+# # считываем данные
+# data = eval(input())
+# value = eval(input())
+#
+# # вызываем функцию
+# print(get_last_index(data, value))
