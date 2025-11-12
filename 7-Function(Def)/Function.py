@@ -248,3 +248,8 @@ from numpy.ma.core import count
 #
 # # вызываем функцию
 # merge(numbers_str)
+
+
+# TASK 18
+
+
