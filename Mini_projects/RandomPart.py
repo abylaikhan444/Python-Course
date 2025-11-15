@@ -223,21 +223,163 @@ from sys import flags
 
 # FULL написания кода Магический шар 8
 
+# from random import *
+#
+# answers = ["Бесспорно", "Мне кажется - да", "Пока неясно, попробуй снова", "Даже не думай",
+#            "Предрешено", "Вероятнее всего", "Спроси позже", "Мой ответ - нет",
+#            "Никаких сомнений", "Хорошие перспективы", "Лучше не рассказывать", "По моим данным - нет",
+#            "Можешь быть уверен в этом", "Да", "Сконцентрируйся и спроси опять", "Весьма сомнительно"]
+#
+# print('Привет Мир, я магический шар, и я знаю ответ на любой твой вопрос.')
+# user_name = input('Введите свое имя: ')
+# print(f'Привет {user_name}')
+# user_question = ''
+# random_answer = choice(answers)
+# print(random_answer)
+# user_answer = ''
+#
+# while user_answer == 'ДА':
+#     user_question = input('Введите свой вопрос!: ', end='')
+#     print(user_question)
+
+
+# import turtle
+# from random import choice
+#
+# # -----------------------------
+# # Магические ответы
+# # -----------------------------
+# answers = [
+#     "Бесспорно", "Мне кажется - да", "Пока неясно, попробуй снова", "Даже не думай",
+#     "Предрешено", "Вероятнее всего", "Спроси позже", "Мой ответ - нет",
+#     "Никаких сомнений", "Хорошие перспективы", "Лучше не рассказывать",
+#     "По моим данным - нет", "Можешь быть уверен в этом", "Да",
+#     "Сконцентрируйся и спроси опять", "Весьма сомнительно"
+# ]
+#
+# # -----------------------------
+# # Настройка окна
+# # -----------------------------
+# screen = turtle.Screen()
+# screen.title("Magic Ball – Turtle UI")
+# screen.setup(width=600, height=500)
+#
+# # -----------------------------
+# # Текстовая черепашка
+# # -----------------------------
+# writer = turtle.Turtle()
+# writer.hideturtle()
+# writer.penup()
+# writer.goto(0, 120)
+#
+# # -----------------------------
+# # Поля ввода
+# # -----------------------------
+# name_input = turtle.textinput("Magic Ball", "Введите своё имя:")
+# if not name_input:
+#     name_input = "Пользователь"
+#
+# # Стартовое приветствие
+# writer.write(f"Привет, {name_input}!", align="center", font=("Arial", 18, "bold"))
+#
+#
+# # -----------------------------
+# # Основная функция "Спросить"
+# # -----------------------------
+# def ask_magic_ball():
+#     question = turtle.textinput("Magic Ball", "Задайте вопрос:")
+#     if not question:
+#         return
+#
+#     # очищаем зону ответа
+#     writer.clear()
+#     writer.write(f"{name_input}, твой вопрос:\n{question}",
+#                  align="center", font=("Arial", 14, "normal"))
+#
+#     # выводим случайный ответ
+#     answer = choice(answers)
+#
+#     writer.goto(0, -20)
+#     writer.write(f"Ответ: {answer}",
+#                  align="center", font=("Arial", 18, "bold"))
+#
+#     writer.goto(0, 120)
+#
+#
+# # -----------------------------
+# # Кнопка (как квадрат)
+# # -----------------------------
+# button = turtle.Turtle()
+# button.penup()
+# button.goto(-60, -150)
+# button.shape("square")
+# button.shapesize(stretch_wid=2, stretch_len=8)
+# button.color("lightblue")
+#
+# text = turtle.Turtle()
+# text.hideturtle()
+# text.penup()
+# text.goto(0, -155)
+# text.write("Спросить", align="center", font=("Arial", 16, "bold"))
+#
+#
+# # -----------------------------
+# # Обработчик клика
+# # -----------------------------
+# def on_click(x, y):
+#     bx1, bx2 = -60 * 2, 60 * 2  # упрощённая проверка
+#     by1, by2 = -150 * 2, -150 * 2 + 40
+#
+#     ask_magic_ball()
+#
+#
+# button.onclick(lambda x, y: ask_magic_ball())
+#
+# turtle.done()
+
+
+
+
+# Генератор безопасных паролей
+
+
 from random import *
 
-answers = ["Бесспорно", "Мне кажется - да", "Пока неясно, попробуй снова", "Даже не думай",
-           "Предрешено", "Вероятнее всего", "Спроси позже", "Мой ответ - нет",
-           "Никаких сомнений", "Хорошие перспективы", "Лучше не рассказывать", "По моим данным - нет",
-           "Можешь быть уверен в этом", "Да", "Сконцентрируйся и спроси опять", "Весьма сомнительно"]
+DIGITS = '0123456789'
+LOWERCASE_LETTERS = 'abcdefghijklmnopqrstuvwxyz'
+UPPERCASE_LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+PUNCTUATION = '!#$%&*+-=?@^_'
 
-print('Привет Мир, я магический шар, и я знаю ответ на любой твой вопрос.')
-user_name = input('Введите свое имя: ')
-print(f'Привет {user_name}')
-user_question = ''
-random_answer = choice(answers)
-print(random_answer)
-user_answer = ''
+chars = ''
 
-while user_answer == 'ДА':
-    user_question = input('Введите свой вопрос!: ', end='')
-    print(user_question)
+pass_count = input('Количество паролей для генерации: ')
+pass_length = input('Какая длина нужна: ')
+user_answer_int = input('Включать ли цифры 0123456789?: ').upper()
+user_answer_str = input('Включать ли прописные буквы?: ').upper()
+user_answer_str2 = input('Включать ли строчные буквы?: ').upper()
+user_answer_char = input('Включать ли символы?: ').upper()
+ser_answer_same_char = input('Исключать ли неоднозначные символы il1Lo0O: ').upper()
+
+if user_answer_int == 'ДА':
+    chars += DIGITS
+if user_answer_str == 'ДА':
+    chars += LOWERCASE_LETTERS
+if user_answer_str2 == 'ДА':
+    chars += UPPERCASE_LETTERS
+if user_answer_char == 'ДА':
+    chars += PUNCTUATION
+
+def generate_password(pass_length, chars):
+    password = ''
+    for i in range(pass_length):
+        password = sample(chars, pass_length)
+        return password
+generate_password(pass_length, chars)
+
+
+
+
+
+
+
+
